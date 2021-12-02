@@ -4,7 +4,7 @@ let HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   mode: process.env.NODE_ENV,
-  entry: path.resolve(__dirname, 'index.ts'),
+  entry: path.resolve(__dirname, 'src/index.ts'),
   output: {
     path: path.resolve(__dirname, 'dist'),
   },
@@ -19,6 +19,13 @@ module.exports = {
           path.resolve(__dirname, 'src')
         ],
         use: [
+          {
+            loader: 'babel-loader',
+            options: {
+              cacheDirectory: true,
+              presets: ['@babel/preset-env']
+            }
+          },
           'ts-loader'
         ]
       },
