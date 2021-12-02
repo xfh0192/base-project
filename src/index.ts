@@ -1,1 +1,2 @@
-console.log('hello111')
+import react, { Suspend } from 'react'
+import ReactDom from 'react-dom' 
