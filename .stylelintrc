@@ -8,7 +8,9 @@
     "node_modules/**",
     "**/*.tsx",
     "**/*.ts",
-    "**/*.js"
+    "**/*.js",
+    "**/*.md",
+    "**/*.json"
   ],
   // "customSyntax": "postcss-less",
   "rules": {
