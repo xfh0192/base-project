@@ -1,12 +1,15 @@
 {
-    "parser": "babel-eslint",
+    "parser": "@typescript-eslint/parser",
     "env": {
         "es6": false,
         "jasmine": true
     },
     "plugins": [
-        "react",
-        "flowtype"
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended"
     ],
     // Map from global var to bool specifying if it can be redefined
     "globals": {
@@ -328,5 +331,10 @@
         "react/require-render-return": 1,
         "react/self-closing-comp": 1,
         "react/wrap-multilines": 0
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        }
     }
 }

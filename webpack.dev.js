@@ -5,7 +5,10 @@ let Webpack = require('webpack')
 let commonConfig = require('./webpack.common')
 
 let config = _.assignIn({}, commonConfig, {
-  
+  devtool: 'eval-source-map',
+  optimization: {
+    noEmitOnErrors: true
+  }
 })
 const devServerOptions = { 
   port: 8888,

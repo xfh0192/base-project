@@ -6,9 +6,11 @@
   "defaultSeverity": "warning",
   "ignoreFiles": [
     "node_modules/**",
+    "**/*.tsx",
+    "**/*.ts",
     "**/*.js"
   ],
-  "customSyntax": "postcss-less",
+  // "customSyntax": "postcss-less",
   "rules": {
     "selector-class-pattern": "[a-zA-Z\\-]+",
     "block-no-empty": true,
