@@ -2,6 +2,8 @@
 
 ## used tools
 - react
+- react-router-dom
+- lodash
 - webpack
 - babel
 - typescript

@@ -13,6 +13,8 @@ let config = _.assignIn({}, commonConfig, {
 const devServerOptions = { 
   port: 8888,
   open: true,
+  // You should add this historyApiFallback: true to devServer on your webpack config. This will return index.html when 404.
+  historyApiFallback: true,
 };
 
 const compiler = Webpack(config);
