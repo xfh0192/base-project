@@ -6,6 +6,7 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "cross-env NODE_ENV=development node webpack.dev.js",
+    "update-resolve": "npx ts-node bin/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

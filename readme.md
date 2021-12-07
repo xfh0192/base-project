@@ -7,6 +7,7 @@
 - webpack
 - babel
 - typescript
+- ts-node
 - eslint
 - stylelint
 

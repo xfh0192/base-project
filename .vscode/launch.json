@@ -1,0 +1,26 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "update resolve",
+      "skipFiles": [
+        "<node_internals>/**",
+      ],
+      // 指定运行环境
+      "runtimeExecutable": "ts-node",
+      // 运行环境命令执行时的注入参数
+      "args": [
+        "${workspaceFolder}/bin/index.ts",
+        // "--show-config",
+      ],
+      "outFiles": [
+        "${workspaceFolder}/**/*.js"
+      ],
+    }
+  ]
+}
